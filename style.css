@@ -1,0 +1,140 @@
+:root{
+    --primary: #ddd;
+    --dark: #333;
+    --light: white;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+body{
+    width: 100%;
+    margin: auto;
+    color: var(--dark);
+    background-color: #02314b;
+    max-width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    max-height: 100vh;
+    overflow-x: hidden;
+    padding: 0;
+}
+h2{
+    font-size: 2rem;
+    color: white;
+    text-align: center
+}
+nav ul{
+    display: none;
+}
+nav ul.show{
+    width: 100%;
+    display: block;
+    list-style: none;
+    padding: 0;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2,1fr);
+    transition: all 7s ease;
+}
+nav li, nav h3{
+    background-color: var(--primary);
+    width: 70%;
+    margin: auto;
+    display: block;
+    padding: 0.8em;
+    text-align: center;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 1.1em;
+    box-shadow: var(--shadow);
+}
+nav li{
+    cursor: pointer;
+}
+nav li:hover{
+    background-color: var(--dark);
+    color: var(--light);
+}
+nav li:active{
+    transform: scale(0.98);
+}
+/* nav li:visited{
+    background-color: red;
+} */
+.main-con{
+    padding-top: 10px;
+    background-color: #f0f1f3;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 3rem;
+    /* font-size: 1.5rem; */
+}
+.instruction-con{
+    width: 50%;
+    margin: auto;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
+.instruction-con h4{
+    font-size: 1rem;
+}
+.main-input{
+    width: 300px;
+    max-width: 100%;
+    height: 30px;
+    border-radius: 10px;
+}
+.msg{
+    color: green;
+}
+.msg.over{
+    font-size: 1.5rem;
+    color: red;
+}
+.main-con.show-nav{
+    /* transform: rotate(-20deg);
+    transition: transform 0.2s linear; */
+}
+.circle-con{
+    position: fixed;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+    left: 10px;
+}
+/* .circle{
+    width: 50px;
+    height: 50px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f1f3;
+    border-radius: 50%;
+    position: relative;
+} */
+.circle:active{
+    border: black solid 2px;
+}
+.circle button{
+    width: 50px;
+    height: 50px;
+    background-color: #f0f1f3;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    color: #333333;
+    transition: all 7s ease;
+}
+.circle button:focus{
+    color: #333333;
+    outline: none;
+}
+.circle button#open{
+    /* left: 60%; */
+}
+.circle button#close{
+    display: none;
+    /* top: 60%;
+    transform: rotate(90deg);
+    transform-origin: top left; */
+}

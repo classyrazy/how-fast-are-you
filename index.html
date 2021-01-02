@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Typing Game</title>
+</head>
+<body>
+    
+    <nav>
+        <ul class="sh">
+            <h3>Levels</h3>
+            <li>Very Easy</li>
+            <li>Easy</li>
+            <li>Medium</li>
+            <li>Hard</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="circle-con">
+            <div class="circle">
+                <button id="close">Close</button>
+                <button id="open">Menu</button>
+            </div>
+        </div>
+        <h2>How Fast Are You ?</h2>
+
+        <div class="main-con show-nav">
+        <p>Type the given words before <span class="game-level-time">5</span> seconds</p>
+        <h1 class="current-word">hello</h1>
+            <input type="text" class="main-input" autofocus placeholder="Start typing...">
+        <p class="msg"></p>
+
+        <h3>Time Left: <span class="counter">0</span></h3>
+        <h3>Score: <span class="score">0</span></h3>
+        <div class="instruction-con">
+            <div class="instructions">
+                <h4>Instructions</h4>
+                <p>Type the given Words in the given amount of time to score. To play again,just type he current word. Your score will reset.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
